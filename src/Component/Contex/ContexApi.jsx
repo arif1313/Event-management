@@ -9,9 +9,6 @@ const ContexApi = ({children}) => {
     const auth = getAuth(app)
     const [user, setUser]=useState(null);
     const [loading, setlodding]=useState(true);
-   
-  
-
  const createuser=(email,password)=>{
     setlodding(true)
     return createUserWithEmailAndPassword(auth, email, password)
