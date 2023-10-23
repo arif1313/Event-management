@@ -5,11 +5,10 @@
    
 }
 .carousel{
-   
-align-items: center;
-justify-content: center;
+    text-align: center;
+
 }
-/* 
+
 .carousel .slider-wrapper{
     width: 50%;
-} */
+}

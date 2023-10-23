@@ -27,10 +27,12 @@ const Home = () => {
             <Carosol></Carosol>
 {/* service */}
  <div>
-<h2> Our services </h2>
+<h2 className="text-4xl font-bold text-center mb-10"> Our <span className="text-red-400">services</span> </h2>
+<div className="grid grid-cols-3 gap-7">
 {
   services.map(service=><Service key={service.id} OurService={service}></Service>)
 }
+</div>
  </div>
 
 

@@ -21,10 +21,32 @@ const Header = () => {
     <li><NavLink to="/profile">profile</NavLink></li>
 
   </>
+
+// {-blue: #007bff;
+// --indigo: #6610f2;
+// --purple: #6f42c1;
+// --pink: #e83e8c;
+// --red: #dc3545;
+// --orange: #fd7e14;
+// --yellow: #ffc107;
+// --green: #28a745;
+// --teal: #20c997;
+// --cyan: #17a2b8;
+// --white: #fff;
+// --gray: #6c757d;
+// --gray-dark: #343a40;
+// --primary: #007bff;
+// --secondary: #6c757d;
+// --success: #28a745;
+// --info: #17a2b8;
+// --warning: #ffc107;
+// --danger: #dc3545;
+// --light: #f8f9fa;
+// --dark: #343a40;}
   return (
     <div className="">
       <div>
-        <div className="navbar bg-none ">
+        <div className="navbar bg-[#fd60a2] rounded-t-lg">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -36,7 +58,7 @@ const Header = () => {
                 }
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <a className="btn btn-ghost normal-case text-xl">Majestic Makers</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
