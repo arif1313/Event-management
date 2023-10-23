@@ -1,0 +1,15 @@
+.carousel .thumb{
+    width: 5%;
+    height: 50px;
+   
+   
+}
+.carousel{
+   
+align-items: center;
+justify-content: center;
+}
+/* 
+.carousel .slider-wrapper{
+    width: 50%;
+} */
