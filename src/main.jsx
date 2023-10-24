@@ -17,6 +17,8 @@ import Home from './Component/Home/Home';
 import SineUp from './Component/SineUp/SineUp';
 import Login from './Component/Login/Login';
 
+import ServiceDetails from './Component/ServiceDetails/ServiceDetails';
+
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,12 @@ const router = createBrowserRouter([
       {
         path:'/Acount',
         element: <Privet><Acount></Acount></Privet>
+      },
+      {
+        path:'/service/:id',
+        element: <Privet><ServiceDetails></ServiceDetails></Privet>,
+        // loader: ({ params }) => fetch(`/event.json/${params.id}`)
+        loader:()=>fetch('/event.json')
       }
     ]
    
