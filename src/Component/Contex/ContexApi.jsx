@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
 import { getAuth } from "firebase/auth";
 import app from "../../Firebase/Firebase.confiq";
@@ -9,6 +9,9 @@ const ContexApi = ({children}) => {
     const auth = getAuth(app)
     const [user, setUser]=useState(null);
     const [loading, setlodding]=useState(true);
+    const provider = new GoogleAuthProvider();
+   
+  
  const createuser=(email,password)=>{
     setlodding(true)
     return createUserWithEmailAndPassword(auth, email, password)
@@ -17,10 +20,19 @@ const SinIn=(email,password)=>{
     setlodding(true)
     return signInWithEmailAndPassword(auth, email, password)
 } 
+const gogleSignIn = ()=>{
+    setlodding(true)
+return signInWithPopup(auth,provider)
+
+}
 
 const LogOut = ()=>{
     setlodding(true)
     return signOut(auth)
+}
+
+const resetPass =(email)=>{
+    return sendPasswordResetEmail(auth,email)
 }
 
 useEffect(()=>{
@@ -37,7 +49,9 @@ const info = {
     loading,
     createuser,
      SinIn,
-      LogOut
+      LogOut,
+      gogleSignIn,
+      resetPass
     }
 
     return (

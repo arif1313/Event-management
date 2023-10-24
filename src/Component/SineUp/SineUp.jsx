@@ -1,11 +1,29 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AutContext } from "../Contex/ContexApi";
+import { FcGoogle } from "react-icons/fc";
 
 
 const SineUp = () => {
-    const {createuser} = useContext(AutContext);
+    const {createuser,gogleSignIn} = useContext(AutContext);
+    const [resistarError , setResistererror]= useState();
+    const [succes, setSucces]=useState('')
+    const navigate = useNavigate()
 
+    const handelgogle = () => {
+
+      gogleSignIn()
+        .then(result => {
+          navigate('/')
+          console.log(result.user)
+        })
+        .catch(error => {
+          console.error(error.message)
+  
+        })
+  
+    }
+  
    
     const hanleSinUP=(e)=>{
      
@@ -14,48 +32,81 @@ const SineUp = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name, email, password)
+
+        setSucces('')
+       setResistererror('')
+       
+        if(password.length<6){
+          setResistererror('Password should be at least 6 characters')
+          return
+        }
+        if(/[A-Z]/.test(password)){
+
+          setResistererror('Password should not Upercase special ,charecter and number')
+          return
+        }
+        
         createuser( email, password)
         .then(result=>{
             console.log(result.user)
+            setSucces('User created succesfullly!!')
+            e.target.reset();
         })
         .catch(error=>{
-            console.log(error)
+          
+            setResistererror(error.message)
+            
+
         })
     }
     return (
-        <div className=" w-full min-h-screen bg-[url]">
+        <div className=" w-full min-h-screen " style={{backgroundImage:`url(https://i.ibb.co/g64Gd3j/cover3.jpg)`, backgroundRepeat:'no-repeat', backgroundPosition:'center', backgroundSize:'cover' }}>
         <div className="hero-content flex-col ">
           <div className="text-center lg:text-left">
          
           </div>
-          <div className=" flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body" onSubmit={hanleSinUP}>
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <form className=" card-body" onSubmit={hanleSinUP}>
                
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
-                <input type="text" name="name" placeholder="Name" className="input input-bordered" required />
+                <input  type="text" name="name" placeholder="Name" className="input input-bordered border-pink-400 " required />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
-                <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                <input type="email" name="email" placeholder="email" className="input input-bordered border-pink-400 " required />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input type="password" placeholder="password" name="password" className="input input-bordered" required />
+                <input type="password" placeholder="password" name="password" className="input input-bordered border-pink-400 " required />
                 <label className="label">
-                  <Link to="/login" className="label-text-alt link link-hover">Already have an acount?</Link>
+                  <Link to="/login" className="label-text-alt link link-hover font-bold">Already have an acount?</Link>
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-primary bg-pink-400 border-none text-white">register</button>
               </div>
+              <div className="form-control my-6 flex ">
+
+
+              <button className="btn btn-outline  text-blue-600 normal-case" onClick={handelgogle}> <FcGoogle className="w-7 h-7"></FcGoogle> Signin with google</button>
+              </div>
+
+              {
+                resistarError&&<p className="text-red-700">{resistarError}</p>
+              }
+              {
+                succes&&<p className="text-green-500">{succes}</p>
+              }
+       
             </form>
+          
           </div>
         </div>
       </div>
