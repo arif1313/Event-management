@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AutContext } from "../Contex/ContexApi";
 import naving from '../../../public/images/520b1e11225b9c277d73615dd64bc6d5.jpg'
+import Drawer from 'react-modern-drawer'
 
 
 const Header = () => {
@@ -12,14 +13,14 @@ const Header = () => {
       .catch(error => console.error(error))
   }
   const someLink = <>
-    <li ><NavLink className="navlink"  to="/">Home</NavLink></li>
+    <li ><NavLink className="navlink" to="/">Home</NavLink></li>
     {user &&
-      <li><NavLink   to="/Acount">Acount</NavLink></li>
+      <li><NavLink to="/Acount">Acount</NavLink></li>
     }
 
-    <li><NavLink   to="/login">login</NavLink></li>
-    <li><NavLink   to="/sinup">Sin up</NavLink></li>
-    <li><NavLink   to="/profile">profile</NavLink></li>
+    <li><NavLink to="/login">login</NavLink></li>
+    <li><NavLink to="/sinup">Sin up</NavLink></li>
+    <li><NavLink to="/profile">profile</NavLink></li>
 
   </>
 
@@ -50,18 +51,25 @@ const Header = () => {
               }
             </ul>
           </div>
+
           <div className="   hidden md:hidden lg:block">
             <img src={naving} alt="" />
           </div>
+
+
+
           <div className="navbar-end">
             {
-              user ? <> <span className="mr-5">{user.displayName}</span>
-                <a onClick={handleLogOut} className="btn btn-sm">logout</a>
+              user ? <> <span className="mr-5 text-pink-600 font-bold">{user.displayName}</span>
+                <label htmlFor="my-drawer-4" className=" btn btn-sm bg-pink-300 normal-case">Acount</label>
               </> : <Link to="/login" className="btn btn-sm">login</Link>
             }
           </div>
+
         </div>
+       
       </div>
+      
     </div>
   );
 };

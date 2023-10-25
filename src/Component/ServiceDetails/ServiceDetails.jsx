@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     const { id } = useParams();
     const intId = parseInt(id);
     const Service = services.find(service => service.id === intId)
-    const { service_name,  title, service_image, background_colour, text_colour, service_price, service_details, service_include_products } = Service;
+    const {imageLinks, service_name,  title, service_image, background_colour, text_colour, service_price, service_details, service_include_products } = Service;
     const handleclick = () => {
 
     }
@@ -42,26 +42,31 @@ const ServiceDetails = () => {
                 </div>
                 <div>
                     <h2 className='text-3xl font-bold'style={{color:text_colour}}>List of Equipment </h2>
-                    <ul className=''>
+                   <div className='flex justify-center'>
+                   <div className='grid grid-cols-2 gap-7'>
                         {
-                            service_include_products.map((element, inx) => <li className='list-disc' key={inx}>{element}</li>)
+                            service_include_products.map((element, inx) => <div className='p-5 shadow-xl text-2xl font-bold'style={{backgroundColor:background_colour}} key={inx}>{element}</div>)
                         }
 
-                    </ul>
+                    </div>
+                   </div>
                 </div>
 
                 <div>
                     <h2 className='text-3xl font-bold 'style={{color:text_colour}}>Decoration model </h2>
-                    <ul className=''>
-                        {
-                            service_include_products.map((element, inx) => <li className='list-disc' key={inx}>{element}</li>)
-                        }
+                 
+                   <div className='flex justify-center gap-7  my-12 p-10 rounded-md' style={{backgroundColor:background_colour}}>
+       
+       {
+              imageLinks.map((img, inx) =>  <img className='w-56 h-56 rounded-lg border-2'style={{borderColor:text_colour}} key={inx} src={img}/>)
+          }
 
-                    </ul>
+       
+
+    
+                   </div>
                 </div>
             </div>
-
-
 
         </div>
     );

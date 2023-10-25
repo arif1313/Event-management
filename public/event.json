@@ -5,14 +5,23 @@
         "service_name": "Floral Decoration",
         "title": "Elegant Floral Arrangements",
         "service_icon": "https://i.ibb.co/fYkK1yR/icon-decration.png",
-        "service_image": "https://i.ibb.co/thR6P2s/wedding3.jpg" ,
+        "service_image": "https://i.ibb.co/HDzXvtK/cfa43a64c5ccf9a927e2c416b0ce73db.jpg" ,
         "service_details": "Our floral decoration service features a stunning collection of fresh flowers and creative arrangements to make your event truly special. We offer a wide range of customizable floral options to suit your theme and preferences.",
         "service_price": "$500 - $2,000",
         "service_include_products": ["Rose bouquets", "Centerpieces", "Candles", "Vases"],
         "background_colour": "#0052ff26",
         "button_background_colour": "#0052ff33",
         "text_colour": "#0052FF",
-        "category_background_colour": "#FFA07A"
+        "category_background_colour": "#FFA07A",
+        "imageLinks": [
+          "https://i.ibb.co/2gY6Mph/0f9f732af92d245e0d8067b1909263eb.jpg",
+          "https://i.ibb.co/qy4NX8m/3622d8001e6eac2c57c8882bf7bb6351.jpg",
+          "https://i.ibb.co/ydn0zKm/050678a4ca7298d8d3851bf16e817ca6.jpg",
+          "https://i.ibb.co/prG4v8H/79561ce405976fcd9431979c3f1a16d5.jpg",
+          "https://i.ibb.co/8dwq0Ry/a0ee33dee0d5958131329a53b98bae3c.jpg",
+          "https://i.ibb.co/HDzXvtK/cfa43a64c5ccf9a927e2c416b0ce73db.jpg"
+        ]
+
       },
       {
         "id": 2,
@@ -26,7 +35,14 @@
         "background_colour": "#79c23f26",
         "button_background_colour": "#79c23f33",
         "text_colour": "#79C23F",
-        "category_background_colour": "#AED6F1"
+        "category_background_colour": "#AED6F1",
+        "imageLinks": [
+          "https://i.ibb.co/ZBFzcMR/87e09ecd72940cbc85a8496622d8d136.jpg",
+          "https://i.ibb.co/JQc21bm/510aee33d9ff243f39301607faf4ad1f.jpg",
+          "https://i.ibb.co/tY0qFKh/834a5a0fad21fce41650f7473746b98f.jpg",
+          "https://i.ibb.co/71sKVr6/f8c01548aa36c566e548c3841cf0e591.jpg",
+          "https://i.ibb.co/wCKh7cj/f5729de965dbd52bc8694bc74f12386b.jpg"
+        ]
      
       },
       {
@@ -41,7 +57,14 @@
         "background_colour": "#f8714726",
         "button_background_colour": "#f8714733",
         "text_colour": "#F87147",
-        "category_background_colour": "#82E0AA"
+        "category_background_colour": "#82E0AA",
+        "imageLinks": [
+          "https://i.ibb.co/5c9BMsj/3ea59e3ad7249d72797169f3b91ab294.jpg",
+          "https://i.ibb.co/hd1sSfm/053c5e9f834e58c9bd3f58eb12c2f860.jpg",
+          "https://i.ibb.co/XVJtFGH/561df0ddacb3d0ddd77ef4dfa6226c9f.jpg",
+          "https://i.ibb.co/wpRvZ23/d35fd07ed64a854fe86d22a2f091b7f6.jpg"
+        ]
+
       },
       {
         "id": 4,
@@ -55,7 +78,13 @@
         "background_colour": "#ff444a26",
         "button_background_colour": "#ff444a33",
         "text_colour": "#FF444A",
-        "category_background_colour": "#F7DC6F"
+        "category_background_colour": "#F7DC6F",
+        "imageLinks": [
+          "https://i.ibb.co/dMy2Ffg/2d9393cf70faa58839886996702a3ae1.jpg",
+          "https://i.ibb.co/Rj1XzgW/89ffa351531d5b0819be2f98ce3ff821.jpg",
+          "https://i.ibb.co/Qc4z9kV/c30f7e85176d1034bf64f701321bd02c.jpg",
+          "https://i.ibb.co/fFDxSr1/f035eced55f3131b7c00ae9eca89b8a4.jpg"
+        ]
       },
       {
         "id": 5,
@@ -69,7 +98,13 @@
         "background_colour": "#79c23f26",
         "button_background_colour": "#79c23f33",
         "text_colour": "#79C23F",
-        "category_background_colour": "#AED6F1"
+        "category_background_colour": "#AED6F1",
+        "imageLinks": [
+          "https://i.ibb.co/XXykBTH/1fbd0c8e1b520669536b2aa01992c029.jpg",
+          "https://i.ibb.co/q1Lnwb9/4cc5265645ab51f4e5a629058f617a9d.jpg",
+          "https://i.ibb.co/hZ3mmmN/5bf7c37c82c8870062ae9b8ee3cea1a8.jpg",
+          "https://i.ibb.co/VNgJP5Y/8f67e903e123e2a0ee53d6b444b6e90a.jpg"
+        ]
       },
       {
         "id": 6,
@@ -84,7 +119,14 @@
         "background_colour": "#ff444a26",
         "button_background_colour": "#ff444a33",
         "text_colour": "#FF444A",
-        "category_background_colour": "#F7DC6F"
+        "category_background_colour": "#F7DC6F",
+        "imageLinks": [
+          "https://i.ibb.co/6BRSGdH/56abcfb001c304964f55d302eb3b06fc.jpg",
+          "https://i.ibb.co/hMKj0xW/a5ad90d051f3595e99b8bd36b1d75c20.jpg",
+          "https://i.ibb.co/gjgBCqr/b68d0828d0ed2b9cf260240422ca1c0c.jpg",
+          "https://i.ibb.co/FwN89S4/e383ee5a2c21976ab8c5bf43711211d0.jpg"
+        ]
+
       },
       {
         "id": 7,
@@ -98,7 +140,13 @@
         "background_colour": "#f8714726",
         "button_background_colour": "#f8714733",
         "text_colour": "#F87147",
-        "category_background_colour": "#82E0AA"
+        "category_background_colour": "#82E0AA",
+        "imageLinks": [
+          "https://i.ibb.co/PFxg6Bc/6a23783a154af43833447f360a0ee080.jpg",
+          "https://i.ibb.co/WcPmsF8/08eba5bf1d5ac45c067fed20b930283a.jpg",
+          "https://i.ibb.co/yF13pgM/213aabe278c433b52588ee751651a470.jpg",
+          "https://i.ibb.co/XCyj19m/6724d326fb06a4304a7a13ae5e6e8e87.jpg"
+        ]
       }
     ]
   }
