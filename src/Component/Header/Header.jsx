@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AutContext } from "../Contex/ContexApi";
 import naving from '../../../public/images/520b1e11225b9c277d73615dd64bc6d5.jpg'
-import Drawer from 'react-modern-drawer'
+
 
 
 const Header = () => {
@@ -12,10 +12,11 @@ const Header = () => {
       .then(res => console.log(res))
       .catch(error => console.error(error))
   }
+
   const someLink = <>
     <li ><NavLink className="navlink" to="/">Home</NavLink></li>
     {user &&
-      <li><NavLink to="/Acount">Acount</NavLink></li>
+      <li><NavLink to="/contact">Contact</NavLink></li>
     }
 
     <li><NavLink to="/login">login</NavLink></li>
@@ -61,7 +62,7 @@ const Header = () => {
           <div className="navbar-end">
             {
               user ? <> <span className="mr-5 text-pink-600 font-bold">{user.displayName}</span>
-                <label htmlFor="my-drawer-4" className=" btn btn-sm bg-pink-300 normal-case">Acount</label>
+                <label onClick={handleLogOut} className=" btn btn-sm bg-pink-300 normal-case">LogOut</label>
               </> : <Link to="/login" className="btn btn-sm">login</Link>
             }
           </div>
@@ -69,7 +70,7 @@ const Header = () => {
         </div>
        
       </div>
-      
+    
     </div>
   );
 };

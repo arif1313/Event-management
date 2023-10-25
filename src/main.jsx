@@ -8,7 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './Component/Root/Root.jsx';
-import Acount from './Component/Acount/Acount.jsx';
+
 import Privet from './Component/Privet/Privet';
 import Profile from './Component/profile/Profile';
 
@@ -18,6 +18,7 @@ import SineUp from './Component/SineUp/SineUp';
 import Login from './Component/Login/Login';
 
 import ServiceDetails from './Component/ServiceDetails/ServiceDetails';
+import Contact from './Component/Contact/contact';
 
 
 const router = createBrowserRouter([
@@ -40,17 +41,14 @@ const router = createBrowserRouter([
         path:'/login',
         element: <Login></Login>
       },
-      {
-        path:'/acount',
-        element: <Acount></Acount>
-      },
+     
       {
         path:'/profile',
         element: <Privet><Profile></Profile></Privet>
       },
       {
-        path:'/Acount',
-        element: <Privet><Acount></Acount></Privet>
+        path:'/contact',
+        element: <Privet><Contact></Contact></Privet>
       },
       {
         path:'/service/:id',

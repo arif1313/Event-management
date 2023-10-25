@@ -1,11 +1,24 @@
+import { useContext } from "react";
+import { AutContext } from "../Contex/ContexApi";
 
+import avatar from '../../../public/images/304b221e61d7b1dcfdabbe0bcab4f1c8.jpg'
 
 const Profile = () => {
+    const { user } = useContext(AutContext);
+    const{displayName,email}=user
+   
     return (
-        <div>
-            <li>arif</li>
-            <li>sagor</li>
-            <li>arifff</li>
+        <div className="flex justify-center items-center">
+            <div className="bg-pink-300 mt-12 w-2/3 rounded-lg flex justify-between p-10">
+                <div>
+                    <p className="p-5">Name: {displayName}</p>
+                    <p className="p-5">Email: {email}</p>
+                </div>
+                <div>
+                    <img className="w-36 h-36 rounded-full" src={avatar} alt="" />
+                </div>
+            </div>
+
         </div>
     );
 };
