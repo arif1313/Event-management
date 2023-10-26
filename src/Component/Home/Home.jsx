@@ -7,7 +7,10 @@ import { useLoaderData } from "react-router-dom";
 import Service from "../Service/Service";
 import Carosol from "../Carosol/Carosol";
 
-import Foter from "../Footer/Foter";
+
+import Team from "../Team/Team";
+
+
 
 
 const Home = () => {
@@ -36,9 +39,8 @@ const Home = () => {
  </div>
  <div data-aos="zoom-in-left"><h2 className="text-4xl font-bold text-center mb-10"> Previous Work </h2></div>
 {/* foter */}
-<Foter></Foter>
 
-
+<Team></Team>
 
         </div>
     );

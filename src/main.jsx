@@ -19,6 +19,7 @@ import Login from './Component/Login/Login';
 
 import ServiceDetails from './Component/ServiceDetails/ServiceDetails';
 import Contact from './Component/Contact/contact';
+import Team from './Component/Team/Team';
 
 
 const router = createBrowserRouter([
@@ -55,8 +56,14 @@ const router = createBrowserRouter([
         element: <Privet><ServiceDetails></ServiceDetails></Privet>,
         // loader: ({ params }) => fetch(`/event.json/${params.id}`)
         loader:()=>fetch('/event.json')
+      },
+      {
+        path:'/team',
+        element: <Privet> <Team></Team></Privet>
       }
+    
     ]
+   
    
   },
 ]);

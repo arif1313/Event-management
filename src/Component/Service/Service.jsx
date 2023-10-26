@@ -1,7 +1,7 @@
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -20,8 +20,8 @@ const Service = ({OurService}) => {
           <h2 className="card-title" style={{color:text_colour}}>{service_name}</h2>
           <p>{title}</p>
           <div className="card-actions justify-end">
-           <NavLink to={`/service/${id}`}> <button className="btn btn-primary w-full border-none font-bold" style={{ backgroundColor:button_background_colour, color:text_colour}}>Buy Now</button>
-           </NavLink></div>
+          <Link className='w-full btn btn-primary  border-none font-bold' to={`/service/${id}`} style={{ backgroundColor:button_background_colour, color:text_colour}}> <a  >Buy Now</a>
+          </Link> </div>
         </div>
       </div> 
     

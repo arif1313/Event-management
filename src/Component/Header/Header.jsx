@@ -19,9 +19,10 @@ const Header = () => {
       <li><NavLink to="/contact">Contact</NavLink></li>
     }
 
-    <li><NavLink to="/login">login</NavLink></li>
-    <li><NavLink to="/sinup">Sin up</NavLink></li>
-    <li><NavLink to="/profile">profile</NavLink></li>
+    <li><NavLink to="/login">Login</NavLink></li>
+    <li><NavLink to="/sinup">Sign up</NavLink></li>
+    <li><NavLink to="/profile">Profile</NavLink></li>
+    <li><NavLink to="/team">Team</NavLink></li>
 
   </>
 
@@ -56,8 +57,6 @@ const Header = () => {
           <div className="   hidden md:hidden lg:block">
             <img src={naving} alt="" />
           </div>
-
-
 
           <div className="navbar-end">
             {

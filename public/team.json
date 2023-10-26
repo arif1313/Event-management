@@ -1,0 +1,44 @@
+{
+  "teamMembers": [
+    {
+      "id": 1,
+      "position": "Event Manager",
+      "profile": "https://i.ibb.co/2cyfbrb/team1.jpg",
+      "name": "John Doe",
+      "age": 32,
+      "working_experience": "8 years in event planning and management"
+    },
+    {
+      "id": 2,
+      "position": "Marketing Coordinator",
+      "profile": "https://i.ibb.co/rQ0txX2/team2.jpg",
+      "name": "Jane Smith",
+      "age": 28,
+      "working_experience": "5 years in marketing and promotions"
+    },
+    {
+      "id": 3,
+      "position": "Venue Coordinator",
+      "profile": "https://i.ibb.co/qpQVbGR/team6.jpg",
+      "name": "Mike Johnson",
+      "age": 35,
+      "working_experience": "10 years in coordinating event venues"
+    },
+    {
+      "id": 4,
+      "position": "Public Relations Specialist",
+      "profile": "https://i.ibb.co/HDTFWbf/team3.jpg",
+      "name": "Sarah Wilson",
+      "age": 29,
+      "working_experience": "6 years in public relations and media"
+    },
+    {
+      "id": 5,
+      "position": "Technical Director",
+      "profile": "https://i.ibb.co/djZjYRY/team4.jpg",
+      "name": "David Anderson",
+      "age": 40,
+      "working_experience": "15 years in technical event management"
+    }
+  ]
+}
