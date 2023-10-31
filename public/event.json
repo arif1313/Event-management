@@ -3,7 +3,7 @@
     {
       "id": 1,
       "service_name": "Floral Decoration",
-      "title": "Elegant Floral Arrangements",
+      "title": " Floral Arrangements",
       "service_icon": "https://i.ibb.co/fYkK1yR/icon-decration.png",
       "service_image": "https://i.ibb.co/HDzXvtK/cfa43a64c5ccf9a927e2c416b0ce73db.jpg",
       "service_details": "Our floral decoration service features a stunning collection of fresh flowers and creative arrangements to make your event truly special. We offer a wide range of customizable floral options to suit your theme and preferences.",
@@ -22,15 +22,14 @@
         "https://i.ibb.co/2gY6Mph/0f9f732af92d245e0d8067b1909263eb.jpg",
         "https://i.ibb.co/qy4NX8m/3622d8001e6eac2c57c8882bf7bb6351.jpg",
         "https://i.ibb.co/ydn0zKm/050678a4ca7298d8d3851bf16e817ca6.jpg",
-        "https://i.ibb.co/prG4v8H/79561ce405976fcd9431979c3f1a16d5.jpg",
-        "https://i.ibb.co/8dwq0Ry/a0ee33dee0d5958131329a53b98bae3c.jpg",
-        "https://i.ibb.co/HDzXvtK/cfa43a64c5ccf9a927e2c416b0ce73db.jpg"
+        "https://i.ibb.co/prG4v8H/79561ce405976fcd9431979c3f1a16d5.jpg"
+     
       ]
     },
     {
       "id": 2,
       "service_name": "Photography",
-      "title": "Professional Photography Services",
+      "title": "Professional Photography ",
       "service_icon": "https://i.ibb.co/MVNKRhK/icon-camera.png",
       "service_image": "https://i.ibb.co/x7HGWKS/weddig-camara.webp",
       "service_details": "Our photography service captures the most beautiful moments of your event. Our professional photographers use high-quality equipment to create stunning images that you'll cherish forever.",
@@ -80,7 +79,7 @@
     {
       "id": 4,
       "service_name": "Seating Decoration",
-      "title": "Beautiful Seating Arrangements",
+      "title": "Seating Arrangements",
       "service_icon": "https://i.ibb.co/gF8vKfb/icon-table.png",
       "service_image": "https://i.ibb.co/kS3K1LK/wedding-chirs.jpg",
       "service_details": "Our seating decoration service ensures that your guests are comfortably seated in an aesthetically pleasing environment. We offer a variety of seating styles and themes to match your event's ambiance.",
@@ -151,31 +150,8 @@
         "https://i.ibb.co/gjgBCqr/b68d0828d0ed2b9cf260240422ca1c0c.jpg",
         "https://i.ibb.co/FwN89S4/e383ee5a2c21976ab8c5bf43711211d0.jpg"
       ]
-    },
-    {
-      "id": 7,
-      "service_name": "Photo Frame",
-      "title": "Custom Photo Frames",
-      "service_icon": "https://i.ibb.co/cFzpX5x/icon-photosatage.png",
-      "service_image": "https://i.ibb.co/MDJB17N/wedding-photoframe.jpg",
-      "service_details": "Our photo frame service offers personalized frames for capturing memorable moments. Design your custom frame to enhance your event's photo booth or guest photography area.",
-      "service_price": "$20 - $50 per frame",
-      "service_include_products": [
-        "Custom design",
-        "Frame props",
-        "Personalization options"
-      ],
-      "background_colour": "#f8714726",
-      "button_background_colour": "#f8714733",
-      "text_colour": "#F87147",
-      "category_background_colour": "#82E0AA",
-      "imageLinks": [
-        "https://i.ibb.co/PFxg6Bc/6a23783a154af43833447f360a0ee080.jpg",
-        "https://i.ibb.co/WcPmsF8/08eba5bf1d5ac45c067fed20b930283a.jpg",
-        "https://i.ibb.co/yF13pgM/213aabe278c433b52588ee751651a470.jpg",
-        "https://i.ibb.co/XCyj19m/6724d326fb06a4304a7a13ae5e6e8e87.jpg"
-      ]
     }
+    
   ]
 
     

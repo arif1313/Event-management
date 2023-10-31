@@ -9,7 +9,7 @@ const Profile = () => {
    
     return (
         <div className="flex justify-center items-center">
-            <div className="bg-pink-300 mt-12 w-2/3 rounded-lg flex justify-between p-10">
+            <div className="bg-pink-100 mt-12 w-2/3 rounded-lg flex justify-between p-10">
                 <div>
                     <p className="p-5">Name: {displayName}</p>
                     <p className="p-5">Email: {email}</p>

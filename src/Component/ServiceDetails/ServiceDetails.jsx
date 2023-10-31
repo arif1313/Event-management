@@ -55,9 +55,9 @@ const ServiceDetails = () => {
                 <div>
                     <h2 className='text-3xl font-bold 'style={{color:text_colour}}>Decoration model </h2>
                  
-                   <div className='flex justify-center gap-7  my-12 p-10 rounded-md' style={{backgroundColor:background_colour}}>
+                   <div className=' grid md:grid-cols-2 lg:grid-cols-4 gap-7  my-12 p-10 rounded-md mx-auto justify-center' style={{backgroundColor:background_colour}}>
        
-       {
+           {
               imageLinks.map((img, inx) =>  <img className='w-56 h-56 rounded-lg border-2'style={{borderColor:text_colour}} key={inx} src={img}/>)
           }
 

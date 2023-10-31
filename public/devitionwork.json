@@ -1,0 +1,61 @@
+{
+    "divisionWork": [
+      {
+        "id": 1,
+        "divisionName": "Dhaka",
+        "date": "2023-03-15",
+        "description": "A grand wedding celebration in a beautiful garden setting. Capturing joyous moments in an enchanting ambiance.",
+        "placeName": "Elegant Garden Resort",
+        "images":  "https://i.ibb.co/VLn6FGJ/7668eff2b6c55b50ac568dbd8dd317ba.jpg"
+         
+      },
+      {
+        "id": 2,
+        "divisionName": "Barishal",
+        "date": "2023-04-22",
+        "description": "An elegant waterfront wedding with picturesque views. Celebrating love amidst stunning waterscapes.",
+        "placeName": "Waterfront Palace",
+        "images":  "https://i.ibb.co/y6xMvhD/abbc139a750b2d06dbb1cc30389d0b2d.jpg"
+          
+      },
+      {
+        "id": 3,
+        "divisionName": "Khulna",
+        "date": "2023-05-10",
+        "description": "Luxurious wedding by the golden beach. Exquisite beauty of nature meets the celebration of love.",
+   
+        "placeName": "Golden Shores Resort",
+        "images": "https://i.ibb.co/txhc9LS/6e7cf4a23d0750eec643046c83a58055.jpg"
+          
+      },
+      {
+        "id": 4,
+        "divisionName": "Sylhet",
+        "date": "2023-06-18",
+        "description": "Magical wedding in an enchanted villa. Embracing love amidst the allure of a mystical valley.",
+        "placeName": "Enchanted Valley Villa",
+        "images":  "https://i.ibb.co/wr5DMLv/335882554a2a419d2cf3fbf689fd35f5.jpg"
+        
+      },
+      {
+        "id": 5,
+        "divisionName": "Rajshahi",
+        "date": "2023-07-05",
+        "description": "A regal wedding at a palace with breathtaking garden landscapes. Royal elegance meets natural beauty.",
+    
+        "placeName": "Royal Garden Palace",
+        "images":  "https://i.ibb.co/CMdygqw/16a1bb2eb5f07860aa784d9e6ee4aa1c.jpg"
+        
+      },
+      {
+        "id": 6,
+        "divisionName": "Chittagong",
+        "description": "A picturesque wedding at a resort with stunning ocean views. Coastal beauty embraces the celebration of union.",
+        "date": "2023-08-12",
+        "placeName": "Oceanview Resort",
+        "images":  "https://i.ibb.co/Yc646cT/e91a7430fafd050df2ecd6ef8987d47b.jpg"
+        
+      }
+    ]
+  }
+  
