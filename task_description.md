@@ -1,6 +1,12 @@
-## :computer: Task Description:
+<h1 align="center">Hi 👋, I'm Md Arif Howlader</h1>
+- 🔭 I Done a project **wedding event management**
 
-Our company is focused on event management. Currently, we are looking for a front-end web developer to build our brand new website using `React`, `firebase`, `react router`, etc.
+- 🌱 I’m currently learning **react , vue, desiUi**
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
+
 
 ### 🧮 Website Theme:
 
