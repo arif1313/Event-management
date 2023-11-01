@@ -20,12 +20,14 @@ import Login from './Component/Login/Login';
 import ServiceDetails from './Component/ServiceDetails/ServiceDetails';
 import Contact from './Component/Contact/contact';
 import Team from './Component/Team/Team';
+import Error from './Component/ErrorPage/Error';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children:[
 
       {
