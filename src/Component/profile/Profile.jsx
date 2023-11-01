@@ -5,7 +5,8 @@ import avatar from '../../../public/images/304b221e61d7b1dcfdabbe0bcab4f1c8.jpg'
 
 const Profile = () => {
     const { user } = useContext(AutContext);
-    const{displayName,email}=user
+    const{displayName,email,photoURL}=user
+    console.log(user)
    
     return (
         <div className="flex justify-center items-center">
@@ -15,7 +16,7 @@ const Profile = () => {
                     <p className="p-5">Email: {email}</p>
                 </div>
                 <div>
-                    <img className="w-36 h-36 rounded-full" src={avatar} alt="" />
+                    <img className="w-36 h-36 rounded-full" src={photoURL?photoURL:avatar} alt="" />
                 </div>
             </div>
 

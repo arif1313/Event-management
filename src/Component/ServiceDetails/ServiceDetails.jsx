@@ -43,9 +43,9 @@ const ServiceDetails = () => {
                 <div>
                     <h2 className='text-3xl font-bold'style={{color:text_colour}}>List of Equipment </h2>
                    <div className='flex justify-center'>
-                   <div className='grid grid-cols-2 gap-7'>
+                   <div className='grid grid-cols-2 gap-7 my-10'>
                         {
-                            service_include_products.map((element, inx) => <div className='p-5 shadow-xl text-2xl font-bold'style={{backgroundColor:background_colour}} key={inx}>{element}</div>)
+                            service_include_products.map((element, inx) => <div className='p-5 shadow-xl text-2xl font-bold rounded-lg'style={{backgroundColor:background_colour}} key={inx}>{element}</div>)
                         }
 
                     </div>

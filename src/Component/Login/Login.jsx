@@ -3,6 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { AutContext } from "../Contex/ContexApi";
 import { FcGoogle } from "react-icons/fc";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
   const [loginError, SetLoginError] = useState('')
@@ -35,15 +38,27 @@ const Login = () => {
 
     SetLoginError('')
 
+   
     if (password.length < 6) {
-      SetLoginError('Password should be at least 6 characters')
+      toast("Password should be at least 6 characters")
+    
       return
-    }
-    if (/[A-Z]/.test(password)) {
 
-      SetLoginError('Password should not Upercase')
+    }
+    else if (!/[A-Z]/.test(password)) {
+      toast('Password should have a Upercase')
+
+    
       return
     }
+
+    else if (!/[\W_]/.test(password)) {
+
+      toast('Passoword should have a Special Charecter')
+      return
+
+    }
+
     
     SinIn(email, password)
       .then(result => {
@@ -54,7 +69,7 @@ const Login = () => {
       })
       .catch(error => {
         console.log(error)
-        SetLoginError(error.message)
+        toast("email of password not match please set correct email and password")
       })
     
   }
@@ -63,19 +78,20 @@ const Login = () => {
     const email = emairef.current.value
     console.log('hii')
     if(!email){
-      SetLoginError("please set a valid emai for reset password")
+      toast("please set a valid emai for reset password")
       return
     }
     else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)){
-      SetLoginError('please set a vaild email for reset password')
+      toast('please set a vaild email for reset password')
       return
     }
     resetPass(email)
     .then(()=>{
-      SetLoginError('chack your email')
+      toast('chack your email')
     })
     .catch(error=>{
-      SetLoginError(error.message)
+      console.log(error)
+     toast("reset failed try again")
       
     })
         }
@@ -122,6 +138,7 @@ const Login = () => {
 
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

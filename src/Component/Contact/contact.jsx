@@ -1,11 +1,15 @@
-import { useState } from "react";
+
 
  
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-    const [sent, setSent]=useState(false)
+
     const handleSent=()=>{
-        setSent(true)
+   
+        toast("SMS set successfully!!!")
+
     }
     return (
         <div>
@@ -37,14 +41,13 @@ const Contact = () => {
               <div className="form-control mt-6">
                 <button  className="btn btn-primary bg-pink-400 border-none text-white">sent</button>
               </div>
-      {
-       (sent===true)?<p>sms sent</p>:''
-      }
+     
             </form>
           
           </div>
         </div>
       </div>
+      <ToastContainer />
         </div>
     );
 };

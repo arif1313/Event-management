@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AutContext } from "../Contex/ContexApi";
 import naving from '../../../public/images/520b1e11225b9c277d73615dd64bc6d5.jpg'
+import avatar from '../../../public/images/304b221e61d7b1dcfdabbe0bcab4f1c8.jpg'
 
 
 
@@ -61,7 +62,9 @@ const Header = () => {
           <div className="navbar-end">
             {
               user ? <> <span className="mr-5 text-pink-600 font-bold">{user.displayName}</span>
-                <label onClick={handleLogOut} className=" btn btn-sm bg-pink-300 normal-case">LogOut</label>
+         
+           <img className="rounded-full h-10 w-19" src={user.photoURL?user.photoURL:avatar} alt="" />
+                     <label onClick={handleLogOut} className=" btn btn-sm bg-pink-300 normal-case">LogOut</label>
               </> : <Link to="/login" className="btn btn-sm">login</Link>
             }
           </div>
