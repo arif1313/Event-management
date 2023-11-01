@@ -18,7 +18,7 @@ const ServiceDetails = () => {
     return (
         <div>
 
-            <div className="mx-auto container">
+            <div className="mx-auto container ">
                 <div className="">
                     <div className="relative">
                         <button
@@ -35,15 +35,15 @@ const ServiceDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="my-12">
+                <div className="my-12 px-5 md:px-0">
                 <h1 className="text-4xl font-extrabold mb-8 text-center text-pink-500">{service_name}</h1>
                     <h1 className="text-4xl font-bold mb-8" style={{color:text_colour}}>{title}</h1>
-                    <p>{service_details} Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maxime sed, ab veritatis aliquam consectetur deserunt ipsa officia repellat voluptatum quas nihil aut obcaecati mollitia aliquid voluptatem distinctio odio nam itaque laboriosam sit vel ea! Officiis rem quasi magni accusantium natus odit, rerum beatae, voluptatibus reiciendis quod debitis? Molestias enim harum, eaque natus explicabo nesciunt, vero obcaecati eveniet quo, fugiat iusto officia quidem numquam beatae! Aperiam distinctio, aliquam laborum mollitia dolores pariatur et maxime dolor! Iste at doloribus numquam esse, amet in voluptatum ratione fugit id ullam error asperiores incidunt voluptatibus aperiam aliquid earum assumenda accusamus soluta dolore quia suscipit.</p>
+                    <p className=''>{service_details}</p>
                 </div>
-                <div>
+                <div className='px-5 md:px-0'>
                     <h2 className='text-3xl font-bold'style={{color:text_colour}}>List of Equipment </h2>
                    <div className='flex justify-center'>
-                   <div className='grid grid-cols-2 gap-7 my-10'>
+                   <div className='grid grid-cols-1 md:grid-cols-2 gap-7 my-10'>
                         {
                             service_include_products.map((element, inx) => <div className='p-5 shadow-xl text-2xl font-bold rounded-lg'style={{backgroundColor:background_colour}} key={inx}>{element}</div>)
                         }

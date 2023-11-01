@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 
 import { getAuth } from "firebase/auth";
 import app from "../../Firebase/Firebase.confiq";
@@ -34,6 +34,9 @@ const LogOut = ()=>{
 const resetPass =(email)=>{
     return sendPasswordResetEmail(auth,email)
 }
+const profileUpdate =(currntUser, name)=>{
+   return updateProfile(currntUser, { displayName: name })
+} 
 
 useEffect(()=>{
     const unSubscribe =  onAuthStateChanged(auth, courentUser=>{
@@ -45,13 +48,15 @@ useEffect(()=>{
      } 
  },[])
 const info = {
+   
     user,
     loading,
     createuser,
      SinIn,
       LogOut,
       gogleSignIn,
-      resetPass
+      resetPass,
+      profileUpdate
     }
 
     return (

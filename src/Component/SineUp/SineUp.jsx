@@ -6,8 +6,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 const SineUp = () => {
-  const { createuser, gogleSignIn } = useContext(AutContext);
+  const { createuser, gogleSignIn,profileUpdate} = useContext(AutContext);
   const [resistarError, setResistererror] = useState();
   const [succes, setSucces] = useState('')
   const navigate = useNavigate()
@@ -62,17 +63,24 @@ const SineUp = () => {
       .then(result => {
         console.log(result.user)
         toast('User created succesfullly!!')
-        result.user.displayName=name
-
         e.target.reset();
+        navigate('/login')
+        profileUpdate(result.user, name)
+        .then(res=> {
+          console.log('updateed profile',res)
+          })
+          .catch(error=>{
+            console.log('updated error is ', error)
+          })
+
       })
       .catch(error => {
 
-        setResistererror(error.message)
+        toast(error.message)
 
 
       })
-  }
+    }
   return (
     <div className=" w-full min-h-screen " style={{ backgroundImage: `url(https://i.ibb.co/g64Gd3j/cover3.jpg)`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
       <div className="hero-content flex-col ">

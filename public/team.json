@@ -39,6 +39,14 @@
       "name": "David Anderson",
       "age": 40,
       "working_experience": "15 years in technical event management"
+    }, 
+    {
+      "id": 6,
+      "position": "Marketing Director",
+      "profile": "https://i.ibb.co/JHGX78R/team5.jpg",
+      "name": "Iftekhar",
+      "age": 30,
+      "working_experience": "15 years in Marketing event management"
     }
   ]
 }

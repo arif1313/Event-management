@@ -42,7 +42,7 @@ const Header = () => {
                 }
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-2xl font-bold">Majestic <span className="text-pink-500"> Makers</span></a>
+            <h2 className="btn btn-ghost normal-case text-base md:text-2xl font-bold">Majestic <span className="text-pink-500"> Makers</span></h2>
           </div>
           <div className="-z-10">
             <img src={naving} alt="" />
@@ -61,7 +61,7 @@ const Header = () => {
 
           <div className="navbar-end">
             {
-              user ? <> <span className="mr-5 text-pink-600 font-bold">{user.displayName}</span>
+              user ? <> <span className=" ml-3 mr-2 text-base md:text-xl text-blck font-bold">{user.displayName}</span>
          
            <img className="rounded-full h-10 w-19" src={user.photoURL?user.photoURL:avatar} alt="" />
                      <label onClick={handleLogOut} className=" btn btn-sm bg-pink-300 normal-case">LogOut</label>
