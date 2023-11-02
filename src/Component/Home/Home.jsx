@@ -14,7 +14,7 @@ const Home = () => {
    
     const data = useLoaderData()
     const services = data.services
-  console.log(services)
+ 
 
   useEffect(()=>{
     Aos.init({duration:2000})

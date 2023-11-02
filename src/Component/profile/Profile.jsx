@@ -7,7 +7,7 @@ const Profile = () => {
     const { user } = useContext(AutContext);
     const{displayName,email,photoURL,metadata}=user
     const {creationTime,lastSignInTime}=metadata
-    console.log(user)
+
    
     return (
         <>

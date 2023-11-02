@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { FaFacebookSquare,FaInstagram } from 'react-icons/fa';
 
 const Member = ({AMember}) => {
-    console.log(AMember)
+  
     const { name, position, profile} = AMember
 
     return (

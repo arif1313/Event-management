@@ -17,7 +17,7 @@ const Team = () => {
     },
 [])
 
-console.log(members)
+
     
     return (
         <div className="rounded-md">

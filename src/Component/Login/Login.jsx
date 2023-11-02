@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AutContext } from "../Contex/ContexApi";
 import { FcGoogle } from "react-icons/fc";
 
@@ -13,13 +13,14 @@ const Login = () => {
  
   const { SinIn, gogleSignIn,resetPass } = useContext(AutContext);
   const navigate = useNavigate()
+  const location =useLocation()
 
 
   const handelgogle = () => {
 
     gogleSignIn()
       .then(result => {
-        navigate('/')
+        navigate(location?.state? location.state: '/')
         console.log(result.user)
       })
       .catch(error => {
@@ -34,7 +35,7 @@ const Login = () => {
 
     const email = e.target.email.value
     const password = e.target.password.value
-    console.log(email, password)
+   
 
     SetLoginError('')
 
@@ -63,7 +64,7 @@ const Login = () => {
     SinIn(email, password)
       .then(result => {
       
-        navigate('/')
+        navigate(location?.state? location.state: '/')
         console.log(result.user)
         e.target.reset();
       })
@@ -76,7 +77,7 @@ const Login = () => {
 
   const handleforget =()=>{
     const email = emairef.current.value
-    console.log('hii')
+    
     if(!email){
       toast("please set a valid emai for reset password")
       return

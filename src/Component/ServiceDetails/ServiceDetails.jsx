@@ -5,7 +5,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 const ServiceDetails = () => {
     const seaciceDetails = useLoaderData();
     const services = seaciceDetails.services
-    console.log('al services', services)
+
 
 
     const { id } = useParams();

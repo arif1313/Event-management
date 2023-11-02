@@ -7,7 +7,7 @@ import { Link} from 'react-router-dom';
 
 const Service = ({OurService}) => {
     const {service_name, service_icon,title,background_colour,button_background_colour, text_colour,id}= OurService
-    console.log(service_name, service_icon);
+  
       
     return (
         // <div data-aos="flip-left"></div>
