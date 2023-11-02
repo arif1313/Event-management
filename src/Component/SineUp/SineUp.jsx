@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AutContext } from "../Contex/ContexApi";
 import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from 'react-toastify';
@@ -12,12 +12,13 @@ const SineUp = () => {
   const [resistarError, setResistererror] = useState();
   const [succes, setSucces] = useState('')
   const navigate = useNavigate()
+  const location =useLocation()
 
   const handelgogle = () => {
 
     gogleSignIn()
       .then(result => {
-        navigate('/')
+        navigate(location?.state? location.state: '/')
         console.log(result.user)
       })
       .catch(error => {
